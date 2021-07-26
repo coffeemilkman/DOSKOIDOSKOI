@@ -69,7 +69,16 @@ body {
   position: fixed;
   z-index: -100;
   margin-left: -15vw;
+  transform: scaleX(-1);  /* 左右反転させる */
   /* background-color: black; */
+}
+
+#canvas{
+  transform: scaleX(-1);  /* 左右反転させる */
+}
+
+#container{
+  z-index: 0;
 }
 
 #js-toggle-camera{
@@ -321,6 +330,7 @@ body.showopenprofileForm .popup{
   width: 100vw;
   margin-top: 75vh;
   margin-left: 20vw;
+  z-index: 2;
 }
 /* #js-room-id{
   display: none;
